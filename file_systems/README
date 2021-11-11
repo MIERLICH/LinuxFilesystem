@@ -1,0 +1,38 @@
+MIERLICH DANIEL 313 CB
+
+Tema am implementato folosind vectori.Am avut nevoie doar de o singura
+structura. Children este vectorul de copii de 39 de pointeri (pentru
+/, *, ., cifre si litere), sfarsit este ca sa deosebesc sfarsitul
+fisierului/directorului, la directoare la sfarsit mai adaug /, la fisiere *,
+cu aceasta implementare ocup multa memorie.
+Fiecare caracter ocupa in vector o anumita pozitie, de exemplu * este pe
+pozitia 0, pentru ca are cel mai mic numar(ASCII) din caracterele care le
+folosesc. Define-urile ma ajuta la implementare. Cu ajutorul functiei get_poz
+aflu pe ce pozitie trebuie sa aloc in vectorul de copii. get_char transforma
+numar in caraacter. Functia getnode, aloca un nod si returneaza. pwd este
+functie recursiva folosesc functia get_char ca ajutor, printez caracter,
+este functie de jos in sus, pornesc de unde sunt pana in root.
+mkdir are 2 cazuri  daca directorul care trebuie creat se incepe cu /,
+rezulta ca a fost data calea absoluta, daca nu se incepe cu / => calea relativa,
+incep din directorul curent, functia "calculeza" calculeza numarul de aparitii
+in cale a caracterelor /, verific existenta directorului, daca exista, printez
+eroare, nu am facut o functie aparte pentru erori. La director adaug "/" la
+sfarsit si mai pun si 1 sa stiu ca sa terminat. Functiile verifica_fisier si
+verifica_exist, prima verifica daca exista fisier(intoarce 1) a doua verifica
+daca este director(intoarce 1 daca exista). Functiile mkdir si touch sunt 
+aproximativ identice, difera doar: la directoare(mkdir pun "/"),
+la fisiere(touch, "*"). ls si ls_f functii recursive memorez in string si la
+sfarsit afisez stringul. nr_copii- numara copiii unui nod. get_root de unde
+nu ar fi se intoare in root folosind pointerul parinte. functia desparte,
+daca am stringul "/dir1/dir2" dupa ce apelez functia stringul va avea forma
+"/dir1".  nod_necesar o folosesc pentru sa gasesc un director, daca nu gaseste
+directorul intoare null. mv este un rm + cp, si erorile care se intalnesc.
+La functi cp ma duc in calea care este date (daca nu este, eroare), si dau
+un touch in acel director. free_all este functia de eliberare o folosesc la
+sfarsitul programului si in fnctiile rm, mv, rmdir (unde trebuie sa sterg ceva).
+funct_ajutor este pentru ls si se foloseste la cazuri de exceptie.
+
+Tema a fost interesanta
+Testele nu verificau multe cazuri de eroare
+Multumesc pentru corectarea temei
+Local am obtinut 105 puncte
