@@ -1,4 +1,4 @@
-//MIERLICH DANIEL 313 CB
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
