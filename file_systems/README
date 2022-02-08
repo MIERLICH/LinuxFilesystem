@@ -30,8 +30,3 @@ La functi cp ma duc in calea care este date (daca nu este, eroare), si dau
 un touch in acel director. free_all este functia de eliberare o folosesc la
 sfarsitul programului si in fnctiile rm, mv, rmdir (unde trebuie sa sterg ceva).
 funct_ajutor este pentru ls si se foloseste la cazuri de exceptie.
-
-Tema a fost interesanta
-Testele nu verificau multe cazuri de eroare
-Multumesc pentru corectarea temei
-Local am obtinut 105 puncte
