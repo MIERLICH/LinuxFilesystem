@@ -1,6 +1,5 @@
-
-Tema am implementato folosind vectori.Am avut nevoie doar de o singura
-structura. Children este vectorul de copii de 39 de pointeri (pentru
+Pentru proiect am avut nevoie doar de o singura
+structura da date Tnod care pastreaza toate informatia. Children este vectorul de copii de 39 de pointeri (pentru
 /, *, ., cifre si litere), sfarsit este ca sa deosebesc sfarsitul
 fisierului/directorului, la directoare la sfarsit mai adaug /, la fisiere *,
 cu aceasta implementare ocup multa memorie.
